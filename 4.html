@@ -21,46 +21,72 @@
             display: inline;
             margin-top: 50px;
         }
-        #name {
-            color: aqua;
-        }
+        
         img {
             border: 5px solid gray;
         }
+        #grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+        body {
+            margin: 0;
+        }
+        h1 {
+            font-size: 45px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            margin: 0;
+        }
+        #grid ol {
+            border-right: 1px solid gray;
+            width: 100px;
+            margin-left: 20px;
+            margin-top: 0;
+            padding: 20px;
+        }
+        #article {
+            padding-left: 25px;
+            margin-top: 10px;
+        }
     </style>
     <h1><a href="index.html">WEB</a></h1>
-    <ol>
-        <li><a href="1.html">HTML</a></li>
-        <li><a href="2.html">CSS</a></li>
-        <li><a href="3.html">JavaScript</a></li>
-        <li><a href="4.html">자기소개</a></li>
-    </ol>
-    <h2>자기소개</h2>
-    <br>
-    <br>
-    <img src="류성원.jpg" width="5%">
-    <br>
-    <br>
-    <p style="margin-top: 40px;">
-     이름:류성원
-    </p>
-    <br>
-    <br>
-    <p style="margin-top: 40px;">    
-    사는 곳:양산
-    </p>
-    <br>
-    <br>
-    <p style="margin-top: 40px;">    
-    전공:화학과        
-    </p>
-    <br>
-    <br>
-    <p style="margin-top: 40px;">       
-    취미:없음      
-    </p>
-    <br>
-    <br>
-    <p style="margin-top: 40px;">
-    특기:없음
-    </p>
+    <div id="grid">
+        <ol>
+            <li><a href="1.html">HTML</a></li>
+            <li><a href="2.html">CSS</a></li>
+            <li><a href="3.html">JavaScript</a></li>
+            <li><a href="4.html">자기소개</a></li>
+        </ol>
+        <div id="article">
+            <h2>자기소개</h2>
+            <br>
+            <br>
+            <img src="류성원.jpg" width="10%">
+            <br>
+            <br>
+            <p style="margin-top: 40px;">
+            이름:류성원
+            </p>
+            <br>
+            <br>
+            <p style="margin-top: 40px;">    
+            사는 곳:양산
+            </p>
+            <br>
+            <br>
+            <p style="margin-top: 40px;">    
+            전공:화학과        
+            </p>
+            <br>
+            <br>
+            <p style="margin-top: 40px;">       
+            취미:없음      
+            </p>
+            <br>
+            <br>
+            <p style="margin-top: 40px;">
+            특기:없음
+            </p>
+        </div>
+    </div>
