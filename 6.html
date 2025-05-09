@@ -24,6 +24,7 @@
             height: 200px;
             object-fit: cover;
             border: 2px solid gold;
+            border-radius: 8px;
             animation-name: move;
             animation-duration: 1s;
             animation-timing-function: ease-in-out;
@@ -32,7 +33,6 @@
             animation-direction: normal;
             animation-fill-mode: both;
             animation-play-state: running;
-            border-radius: 8px;
         }
 
         .gallery2 {
@@ -67,7 +67,7 @@
             }
 
             12.5% {
-                transform: rotate(1.5deg);
+                transform: rotate(1deg);
             }
 
             25% {
@@ -75,7 +75,7 @@
             }
 
             37.5% {
-                transform: rotate(1.5deg);
+                transform: rotate(1deg);
             }
 
             50% {
@@ -83,24 +83,31 @@
             }
 
             62.5% {
-                transform: rotate(-1.5deg);
+                transform: rotate(-1deg);
             }
 
             75% {
                 transform: rotate(-2deg);
             }
+
             87.5% {
-                transform: rotate(-1.5deg);
+                transform: rotate(-1deg);
             }
+
             100% {
                 transform: rotate(0deg);
             }
         }
 
         .gallery2 img:hover {
-            transform: scale(1.5);
             background-color: aqua;
+            transform: scale(1.5)
         }
+
+        .c6 img:hover {
+            transform: scale(1.5) translateX(-40px);
+        }
+
     </style>
     <div id="grid">
         <ol>
@@ -128,7 +135,7 @@
                 <img src="img/car3.jpg" alt="자동차 사진3">
                 <img src="img/car4.png" alt="자동차 사진4">
                 <img src="img/car5.jpg" alt="자동차 사진5">
-                <img src="img/car6.png" alt="자동차 사진6">
+                <div class="c6"><img src="img/car6.png" alt="자동차 사진6"></div>
             </div>
         </div>
     </div>
