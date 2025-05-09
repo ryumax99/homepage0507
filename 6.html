@@ -25,10 +25,10 @@
             object-fit: cover;
             border: 2px solid gold;
             animation-name: move;
-            animation-duration: 0.5s;
+            animation-duration: 1s;
             animation-timing-function: ease-in-out;
-            animation-delay: 0.2s;
-            animation-iteration-count: 1;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
             animation-direction: normal;
             animation-fill-mode: both;
             animation-play-state: running;
@@ -48,6 +48,7 @@
             height: 200px;
             object-fit: cover;
             border: 2px solid gold;
+            border-radius: 8px;
         }
 
         h3 {
@@ -62,18 +63,37 @@
 
         @keyframes move {
             0% {
-                opacity: 0;
-                transform: translateY(30px) scale(0.5) rotate(0deg);
+                transform: rotate(0deg);
             }
 
-            /* 50% {
-                opacity: 0.5;
-                transform: translateY(15px) scale(0.75) rotate(0deg);
-            } */
-            
+            12.5% {
+                transform: rotate(1.5deg);
+            }
+
+            25% {
+                transform: rotate(2deg);
+            }
+
+            37.5% {
+                transform: rotate(1.5deg);
+            }
+
+            50% {
+                transform: rotate(0deg);
+            }
+
+            62.5% {
+                transform: rotate(-1.5deg);
+            }
+
+            75% {
+                transform: rotate(-2deg);
+            }
+            87.5% {
+                transform: rotate(-1.5deg);
+            }
             100% {
-                opacity: 1;
-                transform: translateY(0px) scale(1) rotate(0deg);
+                transform: rotate(0deg);
             }
         }
 
