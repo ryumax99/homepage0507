@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Cute Font"; */
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+#container {
+    margin: 0 auto;
+    width: 1200px;
+    background-color: beige;
+}
+
+header {
+    width: 100%;
+    background-color: crimson;
+    height: 150px;
+}
+
+#logo {
+    float: left;
+    width: 200px;
+    height: 100px;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+h1 {
+    padding-left: 10px;
+    padding-top: 20px;
+    /* font-size: 35px; */
+    font-weight: 700px;
+    color: chartreuse;
+    text-shadow: 2px -2px 2px black;
+}
+
+nav {
+    float: right;
+    width: 900px;
+    height: 100px;
+    padding-top: 40px;
+}
+
+#menu {
+   height: 60px; 
+}
+
+#menu>li {
+    float: left;
+    position: relative;
+}
+
+#menu>li>a {
+    display: block;
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: 20px 60px;
+    color: white;
+}
+
+#menu>li>a:hover {
+    color: black;
+    transform: scale(1.4);
+}
+
+.contents {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    width: 1000px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+
+footer {
+    width: 1200px;
+    height: 100px;
+    border-top: 2px solid gray;
+}
+
+#bottommenu {
+    width: 100%;
+    height: 100px;
+    margin-left: 300px;
+}
+
+#bottommenu ul {
+    margin-top: 15px;
+}
+
+#bottommenu ul li {
+    float: left;
+    padding: 5px 50px;
+    border-right: 2px solid gray;
+}
+
+#bottommenu ul li:last-child {
+    border-right: none;
+}
+
+#post {
+    margin-left: 40px;
+}
+
+#sidebar img {
+    width: 200px;
+    height: 400px;
+}
